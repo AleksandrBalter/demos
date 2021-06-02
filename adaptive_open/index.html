@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<!--
+	NOTES:
+	1. All tokens are represented by '$' sign in the template.
+	2. You can write your code only wherever mentioned.
+	3. All occurrences of existing tokens will be replaced by their appropriate values.
+	4. Blank lines will be removed automatically.
+	5. Remove unnecessary comments before creating your template.
+-->
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="authoring-tool" content="Adobe_Animate_CC">
+<title>index</title>
+<!--<script type="text/javascript" src="//banners.adfox.ru/files/adfox_HTML5.js"></script>-->
+<!-- write your code here -->
+<script src="createjs-2015.11.26.min.js"></script>
+<script src="index.js"></script>
+<script>
+var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+function init() {
+	canvas = document.getElementById("canvas");
+	anim_container = document.getElementById("animation_container");
+	dom_overlay_container = document.getElementById("dom_overlay_container");
+	var comp=AdobeAn.getComposition("C15C0D8B9F1046B69BD7FA6F21CB1221");
+	var lib=comp.getLibrary();
+	var loader = new createjs.LoadQueue(false);
+	loader.addEventListener("fileload", function(evt){handleFileLoad(evt,comp)});
+	loader.addEventListener("complete", function(evt){handleComplete(evt,comp)});
+	var lib=comp.getLibrary();
+	loader.loadManifest(lib.properties.manifest);
+}
+    var flashVars = {
+      reference: "%reference%",
+      link: "%user1%",
+      target: "%target%",
+      rnd: parseInt("%random1%") || parseInt("%random%"),
+      events: [
+            "",
+            "%event1%",
+            "%event2%",
+            "%event3%",
+            "%event4%",
+            "%event5%",
+            "%event6%",
+            "%event7%",
+            "%event8%",
+            "%event9%",
+            "%event10%",
+            "%event11%",
+            "%event12%",
+            "%event13%",
+            "%event14%",
+            "%event15%",
+            "%event16%",
+            "%event17%",
+            "%event18%",
+            "%event19%",
+            "%event20%",
+            "%event21%",
+            "%event22%",
+            "%event23%",
+            "%event24%",
+            "%event25%",
+            "%event26%",
+            "%event27%",
+            "%event28%",
+            "%event29%",
+            "%event30%"
+      ]
+    };
+function handleFileLoad(evt, comp) {
+	var images=comp.getImages();	
+	if (evt && (evt.item.type == "image")) { images[evt.item.id] = evt.result; }	
+}
+function handleComplete(evt,comp) {
+	//This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+	var lib=comp.getLibrary();
+	var ss=comp.getSpriteSheet();
+	var queue = evt.target;
+	var ssMetadata = lib.ssMetadata;
+	for(i=0; i<ssMetadata.length; i++) {
+		ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
+	}
+	exportRoot = new lib.index();
+	stage = new lib.Stage(canvas);
+	stage.addChild(exportRoot);
+	stage.enableMouseOver();	
+	//Registers the "tick" event listener.
+	fnStartAnimation = function() {
+		createjs.Ticker.setFPS(lib.properties.fps);
+		createjs.Ticker.addEventListener("tick", stage);
+	}	    
+	//Code to support hidpi screens and responsive scaling.
+	function makeResponsive(isResp, respDim, isScale, scaleType) {		
+		var lastW, lastH, lastS=1;		
+		window.addEventListener('resize', resizeCanvas);		
+		resizeCanvas();		
+		function resizeCanvas() {			
+			var w = lib.properties.width, h = lib.properties.height;			
+			var iw = window.innerWidth, ih=window.innerHeight;			
+			var pRatio = window.devicePixelRatio || 1, xRatio=iw/w, yRatio=ih/h, sRatio=1;			
+			if(isResp) {                
+				if((respDim=='width'&&lastW==iw) || (respDim=='height'&&lastH==ih)) {                    
+					sRatio = lastS;                
+				}				
+				else if(!isScale) {					
+					if(iw<w || ih<h)						
+						sRatio = Math.min(xRatio, yRatio);				
+				}				
+				else if(scaleType==1) {					
+					sRatio = Math.min(xRatio, yRatio);				
+				}				
+				else if(scaleType==2) {					
+					sRatio = Math.max(xRatio, yRatio);				
+				}			
+			}			
+			canvas.width = w*pRatio*sRatio;			
+			canvas.height = h*pRatio*sRatio;
+			canvas.style.width = dom_overlay_container.style.width = anim_container.style.width =  w*sRatio+'px';				
+			canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = h*sRatio+'px';
+			stage.scaleX = pRatio*sRatio;			
+			stage.scaleY = pRatio*sRatio;			
+			lastW = iw; lastH = ih; lastS = sRatio;		
+		}
+	}
+	//makeResponsive(false,'both',false,1);	
+	AdobeAn.compositionLoaded(lib.properties.id);
+	fnStartAnimation();
+}
+</script>
+<style>
+	#disclaimer{
+		color: #999;
+		font-family: 'Tahoma';
+		font-size: 13px;
+		line-height: 14px;
+		padding: 25px;
+		position: absolute;
+		overflow: hidden;
+		top: 0;
+		left: 0;
+		text-align: justify;
+		word-wrap: normal;
+		-webkit-transition: .25s opacity ease-in-out;
+		-o-transition: .25s opacity ease-in-out;
+		transition: .25s opacity ease-in-out;
+		opacity: 0;
+	}
+	@media (max-width: 300px) {
+			#disclaimer {
+				font-size: 8px;
+				line-height: 8px;
+				padding: 10px;
+			}
+		}
+		@media (min-width: 300px) {
+			#disclaimer {
+				font-size: 8px;
+				line-height: 8px;
+				padding: 10px;
+			}
+		}
+		@media (min-width: 350px) {
+			#disclaimer {
+				font-size: 8px;
+				line-height: 9px;
+				padding: 15px;
+			}
+		}
+		@media (min-width: 450px) {
+			#disclaimer {
+				font-size: 9px;
+				line-height: 10px;
+				padding: 15px;
+			}
+		}
+		@media (min-width: 550px) {
+			#disclaimer {
+				font-size: 10px;
+				line-height: 11px;
+				padding: 20px;
+			}
+		}
+		@media (min-width: 700px) {
+			#disclaimer {
+				font-size: 11px;
+				line-height: 12px;
+				padding: 25px;
+			}
+		}
+		@media (min-width: 900px) {
+			#disclaimer {
+				font-size: 12px;
+				line-height: 14px;
+				padding: 25px;
+			}
+		}
+		@media (min-width: 1150px) {
+			#disclaimer {
+				font-size: 14px;
+				line-height: 16px;
+				padding: 25px;
+			}
+		}
+</style>
+</head>
+<body onload="init();" style="margin:0px;">
+	<div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:560px; height:250px">
+		<canvas id="canvas" width="560" height="250" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:560px; height:250px; position: absolute; left: 0px; top: 0px; display: block;">
+		</div>
+	</div>
+	<div id="disclaimer">
+		Смарт Карта — банковская карта в рублях по тарифу «Смарт Карта» Visa PayWave. Cash-back — кэш-бэк (транслит.). Cash-back в рамках программы «Кэшбек 10% в категориях» начисляется в дополнение к стандартному начислению cash-back в рамках тарифа, в случае безналичной оплаты товаров и услуг картой в категории «Книжные магазины/ Учебники» в период с 01.08.2017 по 31.08.2017, cash-back в рамках программы не может превышать 2 000 рублей в месяц. Срок проведения программы — с 23.11.2016 по 31.12.2017. Организатор – ПАО Банк «ФК Открытие». С информацией об организаторе программы, о правилах ее проведения, сроках, месте и порядке получения поощрения можно ознакомиться на open.ru. Стандартный cash-back составляет 1% от суммы операции при сумме ежемесячных покупок до 30 000 рублей; 1,5% от суммы операции при сумме ежемесячных покупок по карте от 30 000,01 рублей и выше. Начисление cash-back производится один раз в месяц. Ежемесячные начисления cash-back не превышают 5 000 рублей. Комиссия за обслуживание карты не взимается при условии, если сумма ежемесячных покупок по карте составляет 30 000 рублей и более или среднемесячный остаток на СКС не менее 30 000 руб. С 01 августа 2017 года изменяются процентные ставки по Смарт Карте: при ежемесячном остатке денежных средств на Смарт Счете до 30 000 руб. ставка составит 8% годовых, от 30 000 до 500 000 руб. – 6% годовых, от 500 000 руб.- 4% годовых. Полный перечень документов, информация о программе, информация об организаторе и условия оформления карт, а так же перечень операций по которым cash-back не начисляется, указаны в Сборнике тарифов банка «Открытие» на сайте open.ru. Организатор - ПАО Банк «ФК Открытие» (по тексту — банк «Открытие» / банк). Генеральная лицензия Банка России № 2209 от 24.11.2014. 115114, г. Москва, ул. Летниковская, д. 2, стр. 4. Реклама.
+	</div>
+</body>
+</html>
