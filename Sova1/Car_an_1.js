@@ -1196,10 +1196,11 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Layer_1
-	this.instance = new lib.Symbol7("synched",0);
-	this.instance.setTransform(100.75,1.9,1,1,0,0,0,136.5,-2.5);
+	this.instance = new lib.Symbol7("synched",9);
+	this.instance.setTransform(414.75,1.9,1,1,0,0,0,136.5,-2.5);
+	this.instance._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(9).to({x:414.75,startPosition:9},0).to({x:80.2,startPosition:99},90,cjs.Ease.quadOut).wait(1).to({regX:35.7,regY:1.7,x:-20.15,y:6.1,startPosition:100},0).wait(1).to({x:-19.7,startPosition:101},0).wait(1).to({x:-19.3,startPosition:102},0).wait(1).to({x:-18.95,startPosition:103},0).wait(1).to({x:-18.6,startPosition:104},0).wait(1).to({x:-18.3,startPosition:105},0).wait(1).to({x:-18,startPosition:106},0).wait(1).to({x:-17.75,startPosition:107},0).wait(1).to({x:-17.5,startPosition:108},0).wait(1).to({x:-17.25,startPosition:109},0).wait(1).to({x:-17.1,startPosition:110},0).wait(1).to({x:-16.9,startPosition:111},0).wait(1).to({x:-16.75,startPosition:112},0).wait(1).to({x:-16.6,startPosition:113},0).wait(1).to({x:-16.5,startPosition:114},0).wait(1).to({x:-16.45,startPosition:115},0).wait(1).to({x:-16.35,startPosition:116},0).wait(1).to({x:-16.3,startPosition:117},0).wait(1).to({startPosition:118},0).wait(1).to({regX:136.5,regY:-2.5,x:84.5,y:1.9,startPosition:119},0).wait(171).to({startPosition:290},0).to({x:88.5,startPosition:300},10,cjs.Ease.quadInOut).to({x:-353.5,startPosition:399},59,cjs.Ease.quadIn).wait(81));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(9).to({_off:false},0).to({x:80.2,startPosition:99},90,cjs.Ease.quadOut).wait(1).to({regX:35.7,regY:1.7,x:-20.15,y:6.1,startPosition:100},0).wait(1).to({x:-19.7,startPosition:101},0).wait(1).to({x:-19.3,startPosition:102},0).wait(1).to({x:-18.95,startPosition:103},0).wait(1).to({x:-18.6,startPosition:104},0).wait(1).to({x:-18.3,startPosition:105},0).wait(1).to({x:-18,startPosition:106},0).wait(1).to({x:-17.75,startPosition:107},0).wait(1).to({x:-17.5,startPosition:108},0).wait(1).to({x:-17.25,startPosition:109},0).wait(1).to({x:-17.1,startPosition:110},0).wait(1).to({x:-16.9,startPosition:111},0).wait(1).to({x:-16.75,startPosition:112},0).wait(1).to({x:-16.6,startPosition:113},0).wait(1).to({x:-16.5,startPosition:114},0).wait(1).to({x:-16.45,startPosition:115},0).wait(1).to({x:-16.35,startPosition:116},0).wait(1).to({x:-16.3,startPosition:117},0).wait(1).to({startPosition:118},0).wait(1).to({regX:136.5,regY:-2.5,x:84.5,y:1.9,startPosition:119},0).wait(171).to({startPosition:290},0).to({x:88.5,startPosition:300},10,cjs.Ease.quadInOut).to({x:-353.5,startPosition:399},59,cjs.Ease.quadIn).wait(81));
 
 	this._renderFirstFrame();
 
@@ -1258,13 +1259,13 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/backdoor.png?1716749134388", id:"backdoor"},
-		{src:"images/bodycar.png?1716749134388", id:"bodycar"},
-		{src:"images/door.png?1716749134388", id:"door"},
-		{src:"images/Glass.png?1716749134388", id:"Glass"},
-		{src:"images/Logo.png?1716749134388", id:"Logo"},
-		{src:"images/tele.png?1716749134388", id:"tele"},
-		{src:"images/tele_1.png?1716749134388", id:"tele_1"}
+		{src:"images/backdoor.png?1716750504450", id:"backdoor"},
+		{src:"images/bodycar.png?1716750504450", id:"bodycar"},
+		{src:"images/door.png?1716750504450", id:"door"},
+		{src:"images/Glass.png?1716750504450", id:"Glass"},
+		{src:"images/Logo.png?1716750504450", id:"Logo"},
+		{src:"images/tele.png?1716750504450", id:"tele"},
+		{src:"images/tele_1.png?1716750504450", id:"tele_1"}
 	],
 	preloads: []
 };
