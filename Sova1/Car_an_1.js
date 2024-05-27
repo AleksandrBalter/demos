@@ -1120,7 +1120,7 @@ if (reversed == null) { reversed = false; }
 	// Layer_1
 	this.instance = new lib.Symbol20();
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(440));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(127).to({_off:true},1).wait(312));
 
 	// Layer_2
 	this.instance_1 = new lib.Symbol23("synched",0);
@@ -1631,7 +1631,7 @@ if (reversed == null) { reversed = false; }
 	this.instance_5 = new lib.Symbol21("synched",0);
 	this.instance_5.setTransform(225.5,439.55);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_5).wait(440));
+	this.timeline.addTween(cjs.Tween.get(this.instance_5).wait(106).to({startPosition:106},0).to({alpha:0,startPosition:126},20).to({_off:true},2).wait(312));
 
 	// Layer_27
 	this.instance_6 = new lib.Symbol18copy("synched",0);
@@ -1659,14 +1659,14 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/backdoor.png?1716781673357", id:"backdoor"},
-		{src:"images/bodycar.png?1716781673357", id:"bodycar"},
-		{src:"images/door.png?1716781673357", id:"door"},
-		{src:"images/Glass.png?1716781673357", id:"Glass"},
-		{src:"images/larg.png?1716781673357", id:"larg"},
-		{src:"images/Logo.png?1716781673357", id:"Logo"},
-		{src:"images/tele.png?1716781673357", id:"tele"},
-		{src:"images/tele_1.png?1716781673357", id:"tele_1"}
+		{src:"images/backdoor.png?1716782567360", id:"backdoor"},
+		{src:"images/bodycar.png?1716782567360", id:"bodycar"},
+		{src:"images/door.png?1716782567360", id:"door"},
+		{src:"images/Glass.png?1716782567360", id:"Glass"},
+		{src:"images/larg.png?1716782567360", id:"larg"},
+		{src:"images/Logo.png?1716782567360", id:"Logo"},
+		{src:"images/tele.png?1716782567360", id:"tele"},
+		{src:"images/tele_1.png?1716782567360", id:"tele_1"}
 	],
 	preloads: []
 };
