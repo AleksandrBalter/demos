@@ -418,7 +418,7 @@ if (reversed == null) { reversed = false; }
 	this.instance = new lib.Symbol11();
 	this.instance.setTransform(-56.65,-47,1,1,0,0,0,0,-44);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).to({rotation:25.1973,guide:{path:[-56.6,-46.8,-59.6,-45.5,-57.6,-44.1,-52.9,-40.6,-41.7,-41.3,-41.1,-41.4,-40.6,-41.4]}},134).to({rotation:0,guide:{path:[-40.6,-41.5,-34.2,-42.1,-33.6,-44.6,-33.4,-45.5,-34.5,-46.2,-35.7,-46.8,-38.1,-47.3,-46.8,-48.7,-55.2,-47.3]}},105).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).to({rotation:25.1973,guide:{path:[-56.6,-46.8,-59.6,-45.5,-57.6,-44.1,-52.9,-40.6,-41.7,-41.3,-41.1,-41.4,-40.6,-41.4]}},134).to({rotation:0,guide:{path:[-40.5,-41.5,-37.3,-41.8,-35.6,-42.6,-33.8,-43.3,-33.6,-44.6,-33.4,-45.5,-34.6,-46.2,-35.7,-46.8,-38.1,-47.3,-47.2,-48.8,-56,-47.1]}},105).wait(1));
 
 	// Symbol_10
 	this.instance_1 = new lib.Symbol10();
@@ -457,14 +457,14 @@ if (reversed == null) { reversed = false; }
 
 	// Symbol_8
 	this.instance = new lib.Symbol8();
-	this.instance.setTransform(11.15,-198.25,1,1,0,0,0,0,-52);
+	this.instance.setTransform(11.1,-198.2,1,1,0,0,0,0,-52);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).to({regX:0.1,regY:-52.1,rotation:-11.5021,guide:{path:[11.1,-198.1,16.4,-200.5,18.7,-199,21,-197.5,21.1,-192.9,21.2,-188.3,19.3,-185.6,18.9,-185,18.3,-184.6]}},105).to({regX:0,regY:-52,rotation:0,guide:{path:[18.3,-184.5,16.1,-183,11.6,-183,5.8,-183.1,5.5,-189.1,5.2,-195,10,-197.6]}},134).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).to({regX:0.1,regY:-52.1,rotation:-11.5021,guide:{path:[11.1,-198.1,16.4,-200.5,18.7,-199,21,-197.5,21.1,-192.9,21.2,-188.3,19.3,-185.6,18.9,-185,18.3,-184.6]}},105).to({regX:0,regY:-52,rotation:0,guide:{path:[18.3,-184.6,16.1,-183,11.6,-183.1,5.8,-183.2,5.5,-189.1,5.2,-195,10.5,-197.8]}},134).wait(1));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-50.9,-254.4,131.4,131.5);
+p.nominalBounds = new cjs.Rectangle(-51,-254.4,131.5,131.5);
 
 
 (lib.Symbol6 = function(mode,startPosition,loop,reversed) {
