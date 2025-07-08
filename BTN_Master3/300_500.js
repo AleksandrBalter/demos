@@ -416,9 +416,9 @@ if (reversed == null) { reversed = false; }
 
 	// Symbol_11
 	this.instance = new lib.Symbol11();
-	this.instance.setTransform(-56.1,-43.9,1,1,0,0,0,0,-44);
+	this.instance.setTransform(-56.65,-47,1,1,0,0,0,0,-44);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).to({rotation:25.1973,guide:{path:[-56,-43.8,-53.7,-46.2,-44.8,-46.2,-41.3,-46.2,-39.7,-45.6,-38.1,-45,-35.7,-42.7,-33.9,-40.9,-33.4,-39.5,-32.9,-38.1,-32.9,-36.2,-32.9,-34.3,-34.1,-32.6,-34.7,-31.6,-36.8,-29.6,-37.7,-28.6,-39.1,-27.9]}},134).to({rotation:0,guide:{path:[-39.1,-27.9,-39.9,-27.6,-40.8,-27.3,-42,-26.9,-45.2,-26.9,-45.3,-26.9,-45.3,-26.9,-48.7,-26.9,-50.3,-27.5,-51.8,-28.1,-55.3,-30.8,-56,-31.4,-56.8,-32.9,-57.3,-33.7,-57.7,-34.7,-58.3,-36.1,-58.5,-36.7,-58.6,-37.2,-58.6,-38.2,-58.6,-39.6,-57.6,-41.4,-57.3,-41.9,-56.4,-43.2]}},105).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).to({rotation:25.1973,guide:{path:[-56.6,-46.8,-59.6,-45.5,-57.6,-44.1,-52.9,-40.6,-41.7,-41.3,-41.1,-41.4,-40.6,-41.4]}},134).to({rotation:0,guide:{path:[-40.6,-41.5,-34.2,-42.1,-33.6,-44.6,-33.4,-45.5,-34.5,-46.2,-35.7,-46.8,-38.1,-47.3,-46.8,-48.7,-55.2,-47.3]}},105).wait(1));
 
 	// Symbol_10
 	this.instance_1 = new lib.Symbol10();
@@ -441,7 +441,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-155.4,-298.7,332.3,329.2);
+p.nominalBounds = new cjs.Rectangle(-155.4,-298.7,332.3,315.5);
 
 
 (lib.Symbol12 = function(mode,startPosition,loop,reversed) {
@@ -459,12 +459,12 @@ if (reversed == null) { reversed = false; }
 	this.instance = new lib.Symbol8();
 	this.instance.setTransform(11.15,-198.25,1,1,0,0,0,0,-52);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).to({regX:0.1,regY:-52.1,rotation:-11.5021,guide:{path:[11.2,-198.1,16.4,-200.4,19.1,-199.2,21.8,-197.9,25.1,-195.1,28.4,-192.4,22.9,-187.7,20.8,-185.8,18.2,-184.6]}},105).to({regX:0,regY:-52,rotation:0,guide:{path:[18.2,-184.6,14.1,-182.7,8.6,-182.3,-0.1,-181.7,-1.2,-187.5,-1.8,-190.4,1,-192.9,3.8,-195.4,10,-197.6]}},134).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).to({regX:0.1,regY:-52.1,rotation:-11.5021,guide:{path:[11.1,-198.1,16.4,-200.5,18.7,-199,21,-197.5,21.1,-192.9,21.2,-188.3,19.3,-185.6,18.9,-185,18.3,-184.6]}},105).to({regX:0,regY:-52,rotation:0,guide:{path:[18.3,-184.5,16.1,-183,11.6,-183,5.8,-183.1,5.5,-189.1,5.2,-195,10,-197.6]}},134).wait(1));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-57.5,-254,142,131.2);
+p.nominalBounds = new cjs.Rectangle(-50.9,-254.4,131.4,131.5);
 
 
 (lib.Symbol6 = function(mode,startPosition,loop,reversed) {
