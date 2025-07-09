@@ -495,9 +495,9 @@ if (reversed == null) { reversed = false; }
 
 	// Layer_1
 	this.instance = new lib.Symbol20("synched",0);
-	this.instance.setTransform(-0.25,-170.4,1,1,0,0,0,0,-171);
+	this.instance.setTransform(0.2,-170.4,1,1,0,0,0,0,-171);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).to({regX:-0.1,rotation:6.9887,guide:{path:[-0.2,-170.3,-1.7,-170,-2.2,-169.9,-2.4,-169.9,-3.8,-169.9,-7,-169.9,-7,-173.5,-7,-174.9,-6.4,-176]}},99).to({regY:-171.1,scaleX:0.9112,scaleY:0.9112,rotation:-6.6982,guide:{path:[-6.4,-175.9,-5.7,-177.1,-4.2,-177.9,-2.1,-179.1,0.4,-179.1,6,-179.1,6.3,-174.8]}},141).to({regX:0,regY:-171,scaleX:1,scaleY:1,rotation:0,guide:{path:[6.3,-174.8,6.3,-174.6,6.3,-174.3,6.3,-170.8,0.9,-170.4]}},73).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).to({regX:-0.1,rotation:6.9887,guide:{path:[0.2,-170.4,-1.7,-170,-2.2,-169.9,-2.5,-169.9,-3.9,-169.9,-7.1,-169.9,-7.1,-173.5,-7.1,-174.9,-6.4,-176]}},99).to({regY:-171.1,scaleX:0.9112,scaleY:0.9112,rotation:-6.6982,guide:{path:[-6.4,-175.9,-5.7,-177.1,-4.2,-177.9,-2.1,-179.1,0.4,-179.1,6,-179.1,6.3,-174.8]}},141).to({scaleX:0.9987,scaleY:0.9987,rotation:-0.0919,guide:{path:[6.3,-174.8,6.3,-174.6,6.3,-174.3,6.3,-170.8,0.9,-170.4]}},72).to({regX:0,regY:-171,scaleX:1,scaleY:1,rotation:0,guide:{path:[0.9,-170.4,0.8,-170.4,0.7,-170.4]}},1).wait(1));
 
 	this._renderFirstFrame();
 
@@ -626,8 +626,8 @@ lib.properties = {
 	color: "#000000",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/300_500_atlas_P_1.png?1751998277628", id:"300_500_atlas_P_1"},
-		{src:"images/300_500_atlas_NP_1.jpg?1751998277628", id:"300_500_atlas_NP_1"}
+		{src:"images/300_500_atlas_P_1.png?1752054851397", id:"300_500_atlas_P_1"},
+		{src:"images/300_500_atlas_NP_1.jpg?1752054851397", id:"300_500_atlas_NP_1"}
 	],
 	preloads: []
 };
